@@ -49,7 +49,7 @@ Configure:
     #Install docker 
     > yum install docker -y
 
-    # start docker service
+    #start docker service
     > systemctl start docker.service
 
   exit multisession mode.
@@ -177,7 +177,7 @@ Observations/Monitor :
 3. We have 3 replicas for each services
   > docker service ps internetbanking
 4. We can access each service with ip of each machine and with respective ip
-  http://ip_of_machine:81      
-  http://ip_of_machine:82
-  http://ip_of_machine:83
-  http://ip_of_machine:84
+  http://ip_of_machine:81    
+  http://ip_of_machine:82  
+  http://ip_of_machine:83  
+  http://ip_of_machine:84  
