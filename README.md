@@ -2,15 +2,15 @@
 Achieving the high availability by using docker swarm for hosting a multi service containerized application with automating the process by JENKINS CI/CD pipeline.
 
 ```
-					---------------			-------------------------	  	   -------------------
-					|   GIT   |     -------->	|	JENKINS		|   <--------->	   |	Docker hub   |
-					---------------			|  Docker swarm		|	           -------------------
-					      				  -----------------------	   
-					            				|
-					            				|
-					        	   ---------------------------------------------
-					      		  |						|
-					   		Node1				       	      Node2
+		---------------			-------------------------	  	   -------------------
+		|   GIT   |     -------->	|	JENKINS		|   <--------->	   |	Docker hub   |
+		---------------			|  Docker swarm		|	           -------------------
+						  -----------------------	   
+							|
+							|
+				   ---------------------------------------------
+				  |						|
+				Node1				       	      Node2
 ```
 
 Objective:
