@@ -116,7 +116,7 @@ Pipeline flow:
   Get repo from git ----> create an image for service ----> tag the image -----> Login and push to the docker hub  ---> pull the image and run containers using swarm ( using compose for same) 
   
   We are using docker-compose file as we are running multiple containers at a time.
-
+```
 pipeline{
   agent any
   stages{
@@ -147,8 +147,7 @@ pipeline{
         }
     }
 
-
-
+```
 
   Save -----> Build with parameter.
 
