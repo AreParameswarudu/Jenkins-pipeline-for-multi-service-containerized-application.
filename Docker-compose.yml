@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  internetbanking:
+    image: paramare/ib-image:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+    volumes:
+      - /var/lib/internetbanking
+  mobilebanking:
+    image: paramare/mb-image:latest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+    volumes:
+      - /var/lib/mobilebanking
+  insurance:
+    image: paramare/insurance-image:latest
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
+    volumes:
+      - /var/lib/insurance
+  loan:
+    image: paramare/loans-image:latest
+    ports:
+      - "84:80"
+    deploy:
+      replicas: 3
+    volumes:
+      - /var/lib/loan
