@@ -1,6 +1,11 @@
 # Jenkins-pipeline-for-multi-service-containerized-application with docker swarm.
 Achieving the high availability by using docker swarm for hosting a multi service containerized application with automating the process by JENKINS CI/CD pipeline.
 
+   <img width="859" height="469" alt="image" src="https://github.com/user-attachments/assets/e4f924e0-7705-4f7b-8948-2e96c059ccf4" />
+
+
+
+
 ```
 		---------------			-------------------------	  	   -------------------
 		|   GIT   |     -------->	|	JENKINS		|   <--------->	   |	Docker hub   |
@@ -12,6 +17,7 @@ Achieving the high availability by using docker swarm for hosting a multi servic
 				  |						|
 				Node1				       	      Node2
 ```
+
 
 Objective:
 --------------
