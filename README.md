@@ -31,7 +31,7 @@ Setup:
 
 Configure:
 
-1. Set hostnames   
+# 1. Set hostnames   
   Access each machine and set hostname for each.
 
   For ( Manager ) Jenkins + Docker swarm machine:  
@@ -44,7 +44,7 @@ Configure:
     > `hostnamectl set-hostname Node1`			# for node2, change the name  
     > sudo -i
 
-2. Install docker on machines  
+# 2. Install docker on machines  
   Use multi-session mode:  
     #Install docker   
     > `yum install docker -y`
@@ -54,7 +54,7 @@ Configure:
 
   exit multisession mode.  
 
-3. Initiate Docker swarm 
+# 3. Initiate Docker swarm 
   In manager machine (Jen-Doc-Man):  
   > `docker swarm init`  
   
@@ -63,7 +63,7 @@ Configure:
   check the nodes ( on manager machine)  
   > `docker node ls`  
 
-4. Install Jenkins on Jen-Doc-Man machine  
+# 4. Install Jenkins on Jen-Doc-Man machine  
   `vi Jenkins.sh`  
   add the script  
   
@@ -74,7 +74,7 @@ Configure:
 
   Login to Jenkins and install recommended plugins.  
   
-5. Execution permission and restart the service  
+# 5. Execution permission and restart the service  
     On Jen-Doc-Man machine  
 
   > `chmod 777 /var/run/docker.sock`  
@@ -82,7 +82,7 @@ Configure:
   > `systemctl restart docker.service`  
 
 	
-Pipeline:  
+# Pipeline:  
 	
 Create new pipeline, Name = Swarm-based-application, Type= Pipeline  
 
@@ -156,7 +156,7 @@ pipeline{
 
 
 
-Regarding Docker-compose file:  
+## Regarding Docker-compose file:  
 ----------------------------------------------
   We have 4 services from the Bank application.  
   so we pushed 4 images ( one for each build) to the hub and pulled the same during pull and creation.  
@@ -168,7 +168,7 @@ Regarding Docker-compose file:
     Volumes == (optional) to specify volume to service.  
 
 
-Observations/Monitor :  
+# Observations/Monitor :  
 		
 1. we have 3 active machines ( ec2 instances / servers ) on docker swarm.  
   > `docker node ls`  
