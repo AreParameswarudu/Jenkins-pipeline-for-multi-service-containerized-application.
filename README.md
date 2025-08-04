@@ -6,6 +6,9 @@ Achieving the high availability by using docker swarm for hosting a multi servic
 
 
 
+--------------------------------
+
+
 ```
 		---------------			-------------------------	  	   -------------------
 		|   GIT   |     -------->	|	JENKINS		|   <--------->	   |	Docker hub   |
