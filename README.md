@@ -10,10 +10,10 @@ Achieving the high availability by using docker swarm for hosting a multi servic
 # Project Context:
 In a cloud-native development setup, there was a need to automate the deployment of a containerized application that demanded high availability. The challenge was to ensure consistent, scalable, and secure delivery of services using Docker Swarm, while maintaining a clear DevOps workflow.
 
-# Objective:
+# 🕵️‍♂️ Objective:
 Build a production-grade Jenkins pipeline capable of handling a multi-container application lifecycle — from build and image management to deployment across a Swarm cluster — **with credential security and environment flexibility**.
 
-# Implementation Highlights:
+# 🏋️‍♂️ Implementation Highlights: 🏋️‍♂️
 * Deployed infrastructure on AWS using three EC2 instances:
 
  	 1. t2.medium Amazon Linux 2 instance hosted Jenkins and served as the Swarm manager.
@@ -28,7 +28,7 @@ Build a production-grade Jenkins pipeline capable of handling a multi-container 
 
 * Automated the deployment using docker stack deploy, ensuring the application runs in a resilient and replicated manner across nodes.
 
-# Impact:
+# 💻 Impact:
 * Achieved fully automated CI/CD delivery, reducing manual deployment overhead.
   
 * Secured pipeline with credential encryption and reusable parameters.
